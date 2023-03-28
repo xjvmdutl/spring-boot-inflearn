@@ -1,0 +1,31 @@
+management:
+  info:
+    java:
+      enabled: true
+    os:
+      enabled: true
+    env:
+      enabled: true
+    #git:
+    #  mode: full #상세 보기
+  server:
+    port: 8080
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      show-components: always
+  #    show-details: always #헬스체크 자세히 하는 옵션
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      #base-path: "/manage"
+info:
+  app:
+    name: hello-actuator
+    company: yh
+
+logging:
+  level:
+    hello.controller: debug
